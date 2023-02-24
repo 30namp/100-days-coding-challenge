@@ -1,0 +1,355 @@
+<!-- RealTime coding -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>days 1 - 100 days of code challenge</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body class="bg-[#1F2122] flex flex-col justify-start items-center">
+    
+    <!-- at first we gonna making the main login / signup part -->
+
+    <!--
+
+    <img class="w-10/12 mt-[4rem]" src="/assets/imgs/img.png" alt="">
+    <p class="header text-white font-semibold text-lg mt-6">Orgnize your life</p>
+    <div class="description-slider w-10/12 bg-transparent mt-4 flex flex-row justify-center items-start overflow-x-hidden">
+        <p class="description text-white opacity-40 text-xs text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo delectus beatae sed, voluptas vel itaque. Dolor?
+        </p>
+    </div>
+    <div class="slider-btns mt-4 flex flex-row justify-center items-center gap-2">
+        <button class="slider-btn h-1 w-1 bg-white rounded-full opacity-40"></button>
+        <button class="slider-btn h-1 w-1 bg-white rounded-full"></button>
+        <button class="slider-btn h-1 w-1 bg-white rounded-full opacity-40"></button>
+        <button class="slider-btn h-1 w-1 bg-white rounded-full opacity-40"></button>
+    </div>
+    <button onclick="" class="signup mt-4 py-3 flex justify-center items-center text-white bg-[#4982EF] w-10/12 rounded-lg text-xs">Create account</button>
+    <button onclick="" class="signup mt-2 py-3 flex justify-center items-center text-white bg-[#2C2C2E] w-10/12 rounded-lg text-xs">Sign in</button>
+
+    -->
+
+
+
+    <!-- making works (OR tasks part) -->
+
+    <!--
+
+    <div class="navbar w-[94%] flex flex-row justify-between items-start mt-4">
+        <button class="mt-1">
+            <img class="h-[1.3rem]" src="./assets/imgs/icon-back.svg" alt="">
+        </button>
+        <button class="more h-4 flex flex-row items-center justify-center text-white opacity-60">
+            ...
+        </button>
+    </div>
+
+    <p class="title text-white mt-8 text-xl font-semibold w-10/12 text-left">
+        😎 Personal
+    </p>
+
+    <div class="task-container w-10/12 mt-4">
+        <div class="top-part w-full flex flex-row items-start justify-between">
+            <div class="task-title mt-1 text-white text-sm font-semibold">Skincare <span class="text-xs opacity-40">3</span></div>
+            <button class="more h-4 flex flex-row items-center justify-center text-white opacity-60">
+                ...
+            </button>
+        </div>
+        <div class="line mt-1 w-full h-[0.05rem] bg-white opacity-20"></div>
+        <div class="task-boxs mt-3 w-full flex flex-col justify-start items-center">
+            <div class="task-box mb-1 relative w-full flex flex-row items-center justify-start gap-2 py-2 px-2 bg-[#202123] border border-[#2A2B2D] rounded-lg">
+                <div onclick="checkboxSwitcher(this)" class="check-box w-4 h-4 rounded-md border border-[#3E3F41] cursor-pointer flex justify-center items-center">
+                </div>
+                <div class="title text-white text-xs">Daily Routine <span class="ml-1 px-1 py-0.5 text-[0.65rem] text-green-500 rounded-sm" style="background: rgba(15, 223, 19, 0.15);">Today</span></div>
+                <button class="absolute right-0 mr-2 remove-btn">
+                    <img class="h-4" src="./assets/imgs/icon-trash.svg" alt="">
+                </button>
+            </div>
+            <div class="task-box mb-1 relative w-full flex flex-row items-center justify-start gap-2 py-2 px-2 bg-[#202123] border border-[#2A2B2D] rounded-lg">
+                <div onclick="checkboxSwitcher(this)" class="check-box w-4 h-4 rounded-md border border-[#3E3F41] cursor-pointer flex justify-center items-center">
+                </div>
+                <div class="title text-white text-xs">Deep... <span class="ml-1 px-1 py-0.5 text-[0.65rem] text-blue-500 rounded-sm" style="background: rgba(15, 74, 223, 0.15);">+2d Remain</span></div>
+                <button class="absolute right-0 mr-2 remove-btn">
+                    <img class="h-4" src="./assets/imgs/icon-trash.svg" alt="">
+                </button>
+            </div>
+            <div class="task-box mb-1 relative w-full flex flex-row items-center justify-start gap-2 py-2 px-2 bg-[#202123] border border-[#2A2B2D] rounded-lg">
+                <div onclick="checkboxSwitcher(this)" class="check-box w-4 h-4 rounded-md border border-[#3E3F41] cursor-pointer flex justify-center items-center">
+                </div>
+                <div class="title text-white text-xs">Eye Cream </div>
+                <button class="absolute right-0 mr-2 remove-btn">
+                    <img class="h-4" src="./assets/imgs/icon-trash.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="task-container w-10/12 mt-4">
+        <div class="top-part w-full flex flex-row items-start justify-between">
+            <div class="task-title mt-1 text-white text-sm font-semibold">House work <span class="text-xs opacity-40">3</span></div>
+            <button class="more h-4 flex flex-row items-center justify-center text-white opacity-60">
+                ...
+            </button>
+        </div>
+        <div class="line mt-1 w-full h-[0.05rem] bg-white opacity-20"></div>
+        <div class="task-boxs mt-3 w-full flex flex-col justify-start items-center">
+            <div class="task-box mb-1 relative w-full flex flex-row items-center justify-start gap-2 py-2 px-2 bg-[#202123] border border-[#2A2B2D] rounded-lg">
+                <div onclick="checkboxSwitcher(this)" class="check-box w-4 h-4 rounded-md border border-[#3E3F41] cursor-pointer flex justify-center items-center">
+                </div>
+                <div class="title text-white text-xs">Daily Routine <span class="ml-1 px-1 py-0.5 text-[0.65rem] text-green-500 rounded-sm" style="background: rgba(15, 223, 19, 0.15);">Today</span></div>
+                <button class="absolute right-0 mr-2 remove-btn">
+                    <img class="h-4" src="./assets/imgs/icon-trash.svg" alt="">
+                </button>
+            </div>
+            <div class="task-box mb-1 relative w-full flex flex-row items-center justify-start gap-2 py-2 px-2 bg-[#202123] border border-[#2A2B2D] rounded-lg">
+                <div onclick="checkboxSwitcher(this)" class="check-box w-4 h-4 rounded-md border border-[#3E3F41] cursor-pointer flex justify-center items-center">
+                </div>
+                <div class="title text-white text-xs">Deep... <span class="ml-1 px-1 py-0.5 text-[0.65rem] text-blue-500 rounded-sm" style="background: rgba(15, 74, 223, 0.15);">+2d Remain</span></div>
+                <button class="absolute right-0 mr-2 remove-btn">
+                    <img class="h-4" src="./assets/imgs/icon-trash.svg" alt="">
+                </button>
+            </div>
+            <div class="task-box mb-1 relative w-full flex flex-row items-center justify-start gap-2 py-2 px-2 bg-[#202123] border border-[#2A2B2D] rounded-lg">
+                <div onclick="checkboxSwitcher(this)" class="check-box w-4 h-4 rounded-md border border-[#3E3F41] cursor-pointer flex justify-center items-center">
+                </div>
+                <div class="title text-white text-xs">Eye Cream </div>
+                <button class="absolute right-0 mr-2 remove-btn">
+                    <img class="h-4" src="./assets/imgs/icon-trash.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="task-container w-10/12 mt-4">
+        <div class="top-part w-full flex flex-row items-start justify-between">
+            <div class="task-title mt-1 text-white text-sm font-semibold">Other tasks <span class="text-xs opacity-40">3</span></div>
+            <button class="more h-4 flex flex-row items-center justify-center text-white opacity-60">
+                ...
+            </button>
+        </div>
+        <div class="line mt-1 w-full h-[0.05rem] bg-white opacity-20"></div>
+        <div class="task-boxs mt-3 w-full flex flex-col justify-start items-center">
+            <div class="task-box mb-1 relative w-full flex flex-row items-center justify-start gap-2 py-2 px-2 bg-[#202123] border border-[#2A2B2D] rounded-lg">
+                <div onclick="checkboxSwitcher(this)" class="check-box w-4 h-4 rounded-md border border-[#3E3F41] cursor-pointer flex justify-center items-center">
+                </div>
+                <div class="title text-white text-xs">Daily Routine <span class="ml-1 px-1 py-0.5 text-[0.65rem] text-green-500 rounded-sm" style="background: rgba(15, 223, 19, 0.15);">Today</span></div>
+                <button class="absolute right-0 mr-2 remove-btn">
+                    <img class="h-4" src="./assets/imgs/icon-trash.svg" alt="">
+                </button>
+            </div>
+            <div class="task-box mb-1 relative w-full flex flex-row items-center justify-start gap-2 py-2 px-2 bg-[#202123] border border-[#2A2B2D] rounded-lg">
+                <div onclick="checkboxSwitcher(this)" class="check-box w-4 h-4 rounded-md border border-[#3E3F41] cursor-pointer flex justify-center items-center">
+                </div>
+                <div class="title text-white text-xs">Deep... <span class="ml-1 px-1 py-0.5 text-[0.65rem] text-blue-500 rounded-sm" style="background: rgba(15, 74, 223, 0.15);">+2d Remain</span></div>
+                <button class="absolute right-0 mr-2 remove-btn">
+                    <img class="h-4" src="./assets/imgs/icon-trash.svg" alt="">
+                </button>
+            </div>
+            <div class="task-box mb-1 relative w-full flex flex-row items-center justify-start gap-2 py-2 px-2 bg-[#202123] border border-[#2A2B2D] rounded-lg">
+                <div onclick="checkboxSwitcher(this)" class="check-box w-4 h-4 rounded-md border border-[#3E3F41] cursor-pointer flex justify-center items-center">
+                </div>
+                <div class="title text-white text-xs">Eye Cream </div>
+                <button class="absolute right-0 mr-2 remove-btn">
+                    <img class="h-4" src="./assets/imgs/icon-trash.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <button class="absolute bottom-0 right-0 m-4 add-task-btn flex justify-center items-center h-12 w-12 rounded-full bg-sky-400">
+        <img src="./assets/imgs/icon-plus.svg" alt="">
+    </button>
+
+    -->
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
+
+<script>
+
+function checkboxSwitcher(elem)
+{
+    if(!elem.classList.contains("openned"))
+    {
+        elem.innerHTML = `<img class="h-[0.5rem]" src="./assets/imgs/icon-check.svg" alt="">`;
+    }
+    else
+    {
+        elem.innerHTML = '';
+    }
+
+    elem.classList.toggle("openned");
+    elem.classList.toggle("bg-sky-400");
+}
+
+// working on page switching
+
+let body = document.querySelector('body');
+
+function pageSwitch(pageName)
+{
+    if(pageName === 'tasks')
+    {
+        body.innerHTML = `
+        
+        <div class="navbar w-[94%] flex flex-row justify-between items-start mt-4">
+        <button class="mt-1" onclick="pageSwitch('login/signup')">
+            <img class="h-[1.3rem]" src="./assets/imgs/icon-back.svg" alt="">
+        </button>
+        <button class="more h-4 flex flex-row items-center justify-center text-white opacity-60">
+            ...
+        </button>
+    </div>
+
+    <p class="title text-white mt-8 text-xl font-semibold w-10/12 text-left">
+        😎 Personal
+    </p>
+
+    <div class="task-container w-10/12 mt-4">
+        <div class="top-part w-full flex flex-row items-start justify-between">
+            <div class="task-title mt-1 text-white text-sm font-semibold">Skincare <span class="text-xs opacity-40">3</span></div>
+            <button class="more h-4 flex flex-row items-center justify-center text-white opacity-60">
+                ...
+            </button>
+        </div>
+        <div class="line mt-1 w-full h-[0.05rem] bg-white opacity-20"></div>
+        <div class="task-boxs mt-3 w-full flex flex-col justify-start items-center">
+            <div class="task-box mb-1 relative w-full flex flex-row items-center justify-start gap-2 py-2 px-2 bg-[#202123] border border-[#2A2B2D] rounded-lg">
+                <div onclick="checkboxSwitcher(this)" class="check-box w-4 h-4 rounded-md border border-[#3E3F41] cursor-pointer flex justify-center items-center">
+                </div>
+                <div class="title text-white text-xs">Daily Routine <span class="ml-1 px-1 py-0.5 text-[0.65rem] text-green-500 rounded-sm" style="background: rgba(15, 223, 19, 0.15);">Today</span></div>
+                <button class="absolute right-0 mr-2 remove-btn">
+                    <img class="h-4" src="./assets/imgs/icon-trash.svg" alt="">
+                </button>
+            </div>
+            <div class="task-box mb-1 relative w-full flex flex-row items-center justify-start gap-2 py-2 px-2 bg-[#202123] border border-[#2A2B2D] rounded-lg">
+                <div onclick="checkboxSwitcher(this)" class="check-box w-4 h-4 rounded-md border border-[#3E3F41] cursor-pointer flex justify-center items-center">
+                </div>
+                <div class="title text-white text-xs">Deep... <span class="ml-1 px-1 py-0.5 text-[0.65rem] text-blue-500 rounded-sm" style="background: rgba(15, 74, 223, 0.15);">+2d Remain</span></div>
+                <button class="absolute right-0 mr-2 remove-btn">
+                    <img class="h-4" src="./assets/imgs/icon-trash.svg" alt="">
+                </button>
+            </div>
+            <div class="task-box mb-1 relative w-full flex flex-row items-center justify-start gap-2 py-2 px-2 bg-[#202123] border border-[#2A2B2D] rounded-lg">
+                <div onclick="checkboxSwitcher(this)" class="check-box w-4 h-4 rounded-md border border-[#3E3F41] cursor-pointer flex justify-center items-center">
+                </div>
+                <div class="title text-white text-xs">Eye Cream </div>
+                <button class="absolute right-0 mr-2 remove-btn">
+                    <img class="h-4" src="./assets/imgs/icon-trash.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="task-container w-10/12 mt-4">
+        <div class="top-part w-full flex flex-row items-start justify-between">
+            <div class="task-title mt-1 text-white text-sm font-semibold">House work <span class="text-xs opacity-40">3</span></div>
+            <button class="more h-4 flex flex-row items-center justify-center text-white opacity-60">
+                ...
+            </button>
+        </div>
+        <div class="line mt-1 w-full h-[0.05rem] bg-white opacity-20"></div>
+        <div class="task-boxs mt-3 w-full flex flex-col justify-start items-center">
+            <div class="task-box mb-1 relative w-full flex flex-row items-center justify-start gap-2 py-2 px-2 bg-[#202123] border border-[#2A2B2D] rounded-lg">
+                <div onclick="checkboxSwitcher(this)" class="check-box w-4 h-4 rounded-md border border-[#3E3F41] cursor-pointer flex justify-center items-center">
+                </div>
+                <div class="title text-white text-xs">Daily Routine <span class="ml-1 px-1 py-0.5 text-[0.65rem] text-green-500 rounded-sm" style="background: rgba(15, 223, 19, 0.15);">Today</span></div>
+                <button class="absolute right-0 mr-2 remove-btn">
+                    <img class="h-4" src="./assets/imgs/icon-trash.svg" alt="">
+                </button>
+            </div>
+            <div class="task-box mb-1 relative w-full flex flex-row items-center justify-start gap-2 py-2 px-2 bg-[#202123] border border-[#2A2B2D] rounded-lg">
+                <div onclick="checkboxSwitcher(this)" class="check-box w-4 h-4 rounded-md border border-[#3E3F41] cursor-pointer flex justify-center items-center">
+                </div>
+                <div class="title text-white text-xs">Deep... <span class="ml-1 px-1 py-0.5 text-[0.65rem] text-blue-500 rounded-sm" style="background: rgba(15, 74, 223, 0.15);">+2d Remain</span></div>
+                <button class="absolute right-0 mr-2 remove-btn">
+                    <img class="h-4" src="./assets/imgs/icon-trash.svg" alt="">
+                </button>
+            </div>
+            <div class="task-box mb-1 relative w-full flex flex-row items-center justify-start gap-2 py-2 px-2 bg-[#202123] border border-[#2A2B2D] rounded-lg">
+                <div onclick="checkboxSwitcher(this)" class="check-box w-4 h-4 rounded-md border border-[#3E3F41] cursor-pointer flex justify-center items-center">
+                </div>
+                <div class="title text-white text-xs">Eye Cream </div>
+                <button class="absolute right-0 mr-2 remove-btn">
+                    <img class="h-4" src="./assets/imgs/icon-trash.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="task-container w-10/12 mt-4">
+        <div class="top-part w-full flex flex-row items-start justify-between">
+            <div class="task-title mt-1 text-white text-sm font-semibold">Other tasks <span class="text-xs opacity-40">3</span></div>
+            <button class="more h-4 flex flex-row items-center justify-center text-white opacity-60">
+                ...
+            </button>
+        </div>
+        <div class="line mt-1 w-full h-[0.05rem] bg-white opacity-20"></div>
+        <div class="task-boxs mt-3 w-full flex flex-col justify-start items-center">
+            <div class="task-box mb-1 relative w-full flex flex-row items-center justify-start gap-2 py-2 px-2 bg-[#202123] border border-[#2A2B2D] rounded-lg">
+                <div onclick="checkboxSwitcher(this)" class="check-box w-4 h-4 rounded-md border border-[#3E3F41] cursor-pointer flex justify-center items-center">
+                </div>
+                <div class="title text-white text-xs">Daily Routine <span class="ml-1 px-1 py-0.5 text-[0.65rem] text-green-500 rounded-sm" style="background: rgba(15, 223, 19, 0.15);">Today</span></div>
+                <button class="absolute right-0 mr-2 remove-btn">
+                    <img class="h-4" src="./assets/imgs/icon-trash.svg" alt="">
+                </button>
+            </div>
+            <div class="task-box mb-1 relative w-full flex flex-row items-center justify-start gap-2 py-2 px-2 bg-[#202123] border border-[#2A2B2D] rounded-lg">
+                <div onclick="checkboxSwitcher(this)" class="check-box w-4 h-4 rounded-md border border-[#3E3F41] cursor-pointer flex justify-center items-center">
+                </div>
+                <div class="title text-white text-xs">Deep... <span class="ml-1 px-1 py-0.5 text-[0.65rem] text-blue-500 rounded-sm" style="background: rgba(15, 74, 223, 0.15);">+2d Remain</span></div>
+                <button class="absolute right-0 mr-2 remove-btn">
+                    <img class="h-4" src="./assets/imgs/icon-trash.svg" alt="">
+                </button>
+            </div>
+            <div class="task-box mb-1 relative w-full flex flex-row items-center justify-start gap-2 py-2 px-2 bg-[#202123] border border-[#2A2B2D] rounded-lg">
+                <div onclick="checkboxSwitcher(this)" class="check-box w-4 h-4 rounded-md border border-[#3E3F41] cursor-pointer flex justify-center items-center">
+                </div>
+                <div class="title text-white text-xs">Eye Cream </div>
+                <button class="absolute right-0 mr-2 remove-btn">
+                    <img class="h-4" src="./assets/imgs/icon-trash.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <button class="absolute bottom-0 right-0 m-4 add-task-btn flex justify-center items-center h-12 w-12 rounded-full bg-sky-400">
+        <img src="./assets/imgs/icon-plus.svg" alt="">
+    </button>
+        
+        `;
+    }
+    else if(pageName === 'login/signup')
+    {
+
+        body.innerHTML = `
+
+<img class="w-10/12 mt-[4rem]" src="/assets/imgs/img.png" alt="">
+    <p class="header text-white font-semibold text-lg mt-6">Orgnize your life</p>
+    <div class="description-slider w-10/12 bg-transparent mt-4 flex flex-row justify-center items-start overflow-x-hidden">
+        <p class="description text-white opacity-40 text-xs text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo delectus beatae sed, voluptas vel itaque. Dolor?
+        </p>
+    </div>
+    <div class="slider-btns mt-4 flex flex-row justify-center items-center gap-2">
+        <button class="slider-btn h-1 w-1 bg-white rounded-full opacity-40"></button>
+        <button class="slider-btn h-1 w-1 bg-white rounded-full"></button>
+        <button class="slider-btn h-1 w-1 bg-white rounded-full opacity-40"></button>
+        <button class="slider-btn h-1 w-1 bg-white rounded-full opacity-40"></button>
+    </div>
+    <button onclick="pageSwitch('tasks')" class="signup mt-4 py-3 flex justify-center items-center text-white bg-[#4982EF] w-10/12 rounded-lg text-xs">Create account</button>
+    <button onclick="pageSwitch('tasks')" class="signup mt-2 py-3 flex justify-center items-center text-white bg-[#2C2C2E] w-10/12 rounded-lg text-xs">Sign in</button>
+
+`;
+
+    }
+}
+
+pageSwitch('login/signup');
+
+</script>
