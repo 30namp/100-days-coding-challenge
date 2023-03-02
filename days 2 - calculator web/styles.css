@@ -1,0 +1,23 @@
+/* define main variables */
+
+body {
+
+    --icon-near-light: #D1D1D1;
+    --icon-near-dark: #4A4A4A;
+    --light-green: #37F3D3;
+
+    --near-light: #F2F2F4;
+    --light: #FFFFFF;
+    --near-dark: #3F3F3F;
+    --dark: #000000;
+
+}
+
+body.dark-theme {
+
+    --near-light: #23252E;
+    --light: #2B2D38;
+    --near-dark: #F2F2F4;
+    --dark: #FFFFFF;
+
+}
